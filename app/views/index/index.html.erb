@@ -5,9 +5,12 @@
     <div class="jumbotron">
       <h1>The Giant Universe.</h1> 
       <p>Do you ever stop and wonder how significant Earth really is compared to the rest of the universe? Me too.</p> 
+      <button type="button" class="btn btn-outline-info">
+        <a href="https://www.youtube.com/watch?v=1Eh5BpSnBBw" target="_blank">Blow your mind. </a>
+      </button>
     </div>
   </div>
-
+<br /> <br />
 <!--Carousel-->
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -18,12 +21,21 @@
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
       <%= image_tag 'planets.jpg', class: 'd-block img-fluid' %>
+        <div class="pic-caption"
+        <b>Earth is the 4th smallest planet in the solar system.</b>
+      </div>
     </div>
     <div class="carousel-item">
       <%= image_tag 'milky_way.jpg', class: 'd-block img-fluid' %>
+        <div class="pic-caption"
+        <b>We live in the Milky Way Galaxy.</b>
+      </div>
     </div>
     <div class="carousel-item">
       <%= image_tag 'galaxies.jpg', class: 'd-block img-fluid' %>
+        <div class="pic-caption"
+        <b>There are endless galaxies just like ours.</b>
+      </div>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -36,12 +48,6 @@
   </a>
 </div>
 
-<!--Buttons-->
-<div class="form-row text-center">
-  <div class="col-12">  
-    <button type="button" class="btn btn-light">Planets</button>
-    <button type="button2" class="btn btn-light">Galaxies</button>
-  </div>
- </div> 
+<br /><br /><br/><br /><br /><br/>
 
 </html>
