@@ -1,1 +1,47 @@
-<h1>Earth's Neighbors</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <!--Header-->
+  <div class="container">
+    <div class="jumbotron">
+      <h1>The Giant Universe.</h1> 
+      <p>Do you ever stop and wonder how significant Earth really is compared to the rest of the universe? Me too.</p> 
+    </div>
+  </div>
+
+<!--Carousel-->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <%= image_tag 'planets.jpg', class: 'd-block img-fluid' %>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'milky_way.jpg', class: 'd-block img-fluid' %>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'galaxies.jpg', class: 'd-block img-fluid' %>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!--Buttons-->
+<div class="form-row text-center">
+  <div class="col-12">  
+    <button type="button" class="btn btn-light">Planets</button>
+    <button type="button2" class="btn btn-light">Galaxies</button>
+  </div>
+ </div> 
+
+</html>
