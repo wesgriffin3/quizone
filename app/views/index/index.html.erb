@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--Header-->
-  <div class="container">
-    <div class="jumbotron">
-      <h1>The Giant Universe.</h1> 
-      <p>Do you ever stop and wonder how significant Earth really is compared to the rest of the universe? Me too.</p> 
-      <button type="button" class="btn btn-outline-info">
-        <a href="https://www.youtube.com/watch?v=1Eh5BpSnBBw" target="_blank">Blow your mind. </a>
-      </button>
-    </div>
+
+<!--Header-->
+
+<!-- Example single danger button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Do Stuff
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" <%= link_to 'Sign In', new_user_session_path, class: 'navbar-brand' %></a>
+    <a class="dropdown-item" <%= link_to 'Sign Out', destroy_user_session_path, class: 'navbar-brand' %></a>
+    <a class="dropdown-item" <%= link_to 'Sign Up', new_user_registration_path, class: 'navbar-brand' %></a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" <%= link_to 'Log In', user_session_path, class: 'navbar-brand' %></a>
   </div>
+</div>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>The Giant Universe.</h1> 
+    <p>Do you ever stop and wonder how significant Earth really is compared to the rest of the universe? Me too.</p> 
+      <button type="button" class="btn btn-outline-info">
+        <a href="https://www.youtube.com/watch?v=1Eh5BpSnBBw" target="_blank">Blow your mind. </a></button>
+        <br />
+        <br />
+  </div>
+</div>
 <br /> <br />
 <!--Carousel-->
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

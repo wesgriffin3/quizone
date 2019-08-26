@@ -1,0 +1,10 @@
+<% @planets.each do |planet| %>
+  <div class="booyah-box col-10 offset-1">
+    <h1><%= planet.name %></h1>
+    <p><%= planet.description %></p><br />
+
+    <% if planet.user.present? %>
+      <small><%= planet.user.email %></small>
+    <% end %>
+  </div>
+<% end %>
